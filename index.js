@@ -13,7 +13,7 @@ app.use(express.static("public"));
 const WeatherAPIKey = "613060d875f013f0fce718aa13df8ec6";
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/index.html");
+    res.sendFile(__dirname + "/index.html");
 })
 
 app.post("/getInfo", async (req, res) => {
