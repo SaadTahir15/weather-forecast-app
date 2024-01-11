@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <div>
+          <h1>Welcome to Weather Forecast App</h1>
+        </div>
+        <form
+          class="searchForm"
+          id="weatherForm"
+          action="/getInfo"
+          method="post"
+        >
+          <input
+            type="text"
+            id="locationInput"
+            name="locationInput"
+            placeholder="E.g., City, Country"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
